@@ -50,7 +50,7 @@ public class BinaryHeap {
    */
   public static void buildHeap(int[] array) {
     //从最后一个非叶子节点开始，依次做“下沉”调整
-    for (int i = (array.length - 2) / 2; i > 0; i--) {
+    for (int i = (array.length - 2) / 2; i >= 0; i--) {
       downAjust(array, i, array.length);
     }
   }
